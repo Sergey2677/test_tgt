@@ -7,7 +7,7 @@
     'website': "https://www.yourcompany.com",
     'category': 'Uncategorized',
     'version': '0.1',
-    'depends': ['base', 'base_automation', 'hr_expense'],
+    'depends': ['base', 'hr_expense'],
     'data': [
         'views/hr_expense_res_config_settings_view_form_inherit.xml',
         'views/hr_expense_view_hr_expense_sheet_form_inherit.xml',
