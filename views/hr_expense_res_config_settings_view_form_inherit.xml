@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+        <record id="res_config_settings_inherit_view" model="ir.ui.view">
+            <field name="name">res.config.settings.inherit.view</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="hr_expense.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='expenses_setting_container']//div[@id='hr_payroll_accountant']" position="after">
+                    <div class="col-xs-12 col-md-6 o_setting_box">
+                        <div class="o_setting_left_pane"></div>
+                        <div class="o_setting_right_pane">
+                            <span class="o_form_label">Subscribed accountant</span>
+                            <span class="fa fa-lg fa-building-o" role="img" />
+                            <div class="text-muted">
+                                Accountant that controls hr expenses sheet
+                            </div>
+                            <div class="row mt8">
+                                <field name="accountant_user_id"/>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
